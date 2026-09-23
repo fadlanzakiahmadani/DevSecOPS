@@ -476,10 +476,10 @@
               "threats": [
                 {
                   "id": "b06dc515-469e-48b8-b3fe-4b71a1fff06b",
-                  "title": "Denial Of Service",
+                  "title": "New STRIDE threat",
                   "status": "Open",
                   "severity": "TBD",
-                  "type": "Denial of service",
+                  "type": "Spoofing",
                   "description": "Provide a description for this threat",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
@@ -489,13 +489,20 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
