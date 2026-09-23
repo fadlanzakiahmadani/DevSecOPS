@@ -74,10 +74,10 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "ed25cf94-93d9-43d9-b822-39495240848a",
                 "ee154af6-c433-4f9d-a716-d315f258eb89",
                 "072f679b-1249-46c2-ad5a-75b1dfa210ac",
-                "09c00ae4-834a-42dc-ac31-ae0ed3e6e1e9"
+                "09c00ae4-834a-42dc-ac31-ae0ed3e6e1e9",
+                "ed25cf94-93d9-43d9-b822-39495240848a"
               ],
               "containedElements": [
                 "1bf5eb36-c352-43d6-9cb9-2438a7dcee76",
@@ -496,13 +496,6 @@
                 "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -951,64 +944,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "HTTP Login",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "6469d64f-ec41-485e-968d-49bd7d13ea18"
-              ]
-            },
-            "labels": [
-              "HTTP Login"
-            ],
-            "id": "ed25cf94-93d9-43d9-b822-39495240848a",
-            "source": {
-              "x": 156,
-              "y": 150
-            },
-            "target": {
-              "cell": "1bf5eb36-c352-43d6-9cb9-2438a7dcee76",
-              "port": "9e5fcb94-8127-4279-9863-a9ab374f4c8b"
-            },
-            "vertices": [
-              {
-                "x": 190,
-                "y": 190
-              },
-              {
-                "x": 310,
-                "y": 190
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Auth Request",
               "description": "",
               "outOfScope": false,
@@ -1338,6 +1273,64 @@
               {
                 "x": 820,
                 "y": 130
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP Login",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "https",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6469d64f-ec41-485e-968d-49bd7d13ea18"
+              ]
+            },
+            "labels": [
+              "HTTP Login"
+            ],
+            "id": "ed25cf94-93d9-43d9-b822-39495240848a",
+            "source": {
+              "x": 156,
+              "y": 150
+            },
+            "target": {
+              "cell": "1bf5eb36-c352-43d6-9cb9-2438a7dcee76",
+              "port": "9e5fcb94-8127-4279-9863-a9ab374f4c8b"
+            },
+            "vertices": [
+              {
+                "x": 190,
+                "y": 190
+              },
+              {
+                "x": 360,
+                "y": 190
               }
             ]
           },
